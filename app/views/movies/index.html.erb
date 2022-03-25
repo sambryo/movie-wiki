@@ -1,0 +1,6 @@
+<% @movies.each do |movie| %>
+  <li><strong><%=movie.title%></strong> has
+   <%=movie.rating%> rating and earned
+   <%=number_to_currency(movie.total_gross, :precision => 0)%>
+  </li>
+<%end%>
