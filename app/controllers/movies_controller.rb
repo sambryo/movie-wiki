@@ -6,4 +6,7 @@ class MoviesController < ApplicationController
     #fail
     @movie = Movie.find(params[:id])
   end 
+  def edit 
+    @movie = Movie.find(params[:id])
+  end 
 end
