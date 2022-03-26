@@ -11,7 +11,7 @@ module MoviesHelper
     if movie.flop?
         "Floop"
     else
-      number_to_human(movie.total_gross, precision:  0, delimeter: ",")
+      number_to_human(movie.total_gross, precision:  2, delimeter: ",")
     end 
   end 
 end
