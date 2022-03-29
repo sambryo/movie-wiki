@@ -1,4 +1,6 @@
 <section>
+  <%= render "movies/shared/errors", object: @movie%>
+
   <%=form_with(model: movie, local: true) do |f|%>
     <%= f.label :title, autofocus: true %>
     <%= f.text_field :title %>
@@ -7,7 +9,7 @@
     <%= f.text_area :description, rows: 7 %>
 
     <%= f.label :rating %>
-    <%= f.text_field :rating %>
+    <%= f.select :rating, Movie::RATINGS, prompt: "Pick one" %>
 
     <%= f.label :released_on %>
     <%= f.date_field :released_on%>
