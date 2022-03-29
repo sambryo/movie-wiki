@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all 
+    @movies = Movie.not_flop
   end
   def show
     #fail
