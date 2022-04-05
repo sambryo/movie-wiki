@@ -1,7 +1,6 @@
-<section>
-  <%= render "movies/shared/errors", object: @movie%>
-
   <%=form_with(model: movie, local: true) do |f|%>
+    <%= render "movies/shared/errors", object: movie %>
+
     <%= f.label :title, autofocus: true %>
     <%= f.text_field :title %>
 
@@ -28,4 +27,3 @@
   
     <%= f.submit%>
   <% end %>
-</section>

@@ -3,7 +3,6 @@ class MoviesController < ApplicationController
     @movies = Movie.not_flop
   end
   def show
-    #fail
     @movie = Movie.find(params[:id])
   end 
   def edit 
