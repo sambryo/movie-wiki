@@ -561,4 +561,11 @@ section.errors {
     position: absolute;
     top: 0;
   }
+  .flash {
+    /* existing styles here */
+  
+    &.danger {
+      background-color: #FFA715;
+    }
+  }
 }
